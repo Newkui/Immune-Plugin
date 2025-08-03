@@ -1,0 +1,11 @@
+name: MyImmunePlugin
+main: myimmune.Main
+version: 1.0
+api-version: 1.20
+commands:
+  immunecheck:
+    description: Check if you are immune
+    usage: /immunecheck
+
+
+

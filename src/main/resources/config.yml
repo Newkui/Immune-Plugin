@@ -1,0 +1,20 @@
+# Immunity time after player respawn (in seconds)
+immunity-seconds: 15
+
+# Which effects should be applied during immunity?
+effects:
+  invisibility: true
+  resistance: true
+
+# Messages sent to the player
+messages:
+  start: "&aYou are immune for %time% seconds!"
+  end: "&cYour immunity has ended!"
+
+# Worlds where immunity is active
+settings:
+  worlds:
+    - world
+    - world_nether
+    - world_the_end
+    - twilight_forest
