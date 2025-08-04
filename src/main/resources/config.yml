@@ -1,20 +1,33 @@
-# Immunity time after player respawn (in seconds)
+# Immunity duration after player respawn (in seconds)
 immunity-seconds: 15
 
-# Which effects should be applied during immunity?
+# Potion effects during immunity
 effects:
-  invisibility: true
-  resistance: true
+  invisibility: true     # true = enabled, false = disabled
+  resistance: true       # true = enabled, false = disabled
+  speed: false           # true = enabled, false = disabled
+  regeneration: false    # true = enabled, false = disabled
 
-# Messages sent to the player
+# Visual effects during immunity
+visual:
+  glowing: true          # true = enable glowing effect
+  particles: true        # true = spawn particles during immunity
+  particle-type: ENCHANTMENT_TABLE  # particle type (example: HEART, FLAME, ENCHANTMENT_TABLE)
+
+# Messages shown to player
 messages:
   start: "&aYou are immune for %time% seconds!"
   end: "&cYour immunity has ended!"
 
-# Worlds where immunity is active
+# Other settings
 settings:
+  # If true, immunity works on all worlds
+  all-worlds: true
+
+  # If false, specify allowed worlds below
   worlds:
     - world
     - world_nether
     - world_the_end
     - twilight_forest
+
