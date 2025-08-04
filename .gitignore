@@ -1,18 +1,25 @@
-# Ignore Java compiled files
+## === Build Output ===
 *.class
-
-# Ignore build directories
-target/
-build/
-
-# IDE settings
-.vscode/
-.idea/
-*.iml
-
-# Logs
-logs/
+*.jar
 *.log
 
-# macOS files
+# === IDE / Editor Files ===
+.idea/
+.vscode/
+*.iml
+
+# === Build Tools ===
+target/
+build/
+out/
+
+# === OS Files ===
 .DS_Store
+Thumbs.db
+
+# === Minecraft Server Temp ===
+logs/
+cache/
+plugins/updates/
+
+  
